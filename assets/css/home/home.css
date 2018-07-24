@@ -1,0 +1,595 @@
+body {
+    background: url('../images/fundo.jpg') no-repeat center center fixed;
+    /*background: #f4f4f4;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0px;
+    font-family: 'Droid Sans', sans-serif;
+    max-height: 100% !important;
+    height: 70%;
+    -webkit-transition: background-image 3s ease-in-out;
+    transition: background-image 3s ease-in-out;
+}
+
+.body-tarde {
+    background: url('../images/fundo_home_tarde.jpg') no-repeat center center fixed;
+    /*background: #f4f4f4;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0px;
+    font-family: 'Droid Sans', sans-serif;
+    max-height: 100% !important;
+    height: 70%;
+    -webkit-transition: background-image 3s ease-in-out;
+    transition: background-image 3s ease-in-out;
+    ;
+}
+
+.body-tarde-2 {
+    background: url('../images/fundo_home_tarde2.jpg') no-repeat center center fixed;
+    /*background: #f4f4f4;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0px;
+    font-family: 'Droid Sans', sans-serif;
+    max-height: 100% !important;
+    height: 70%;
+    -webkit-transition: background-image 3s ease-in-out;
+    transition: background-image 3s ease-in-out;
+    ;
+}
+
+.body-tarde-noite {
+    background: url('../images/fundo_home_noite.jpg') no-repeat center center fixed;
+    /*background: #f4f4f4;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0px;
+    font-family: 'Droid Sans', sans-serif;
+    max-height: 100% !important;
+    height: 70%;
+    -webkit-transition: background-image 3s ease-in-out;
+    transition: background-image 3s ease-in-out;
+    ;
+}
+
+.hire-me-link {
+    display: inline-block;
+    padding:20px;
+    text-align: center;
+}
+
+
+.ui.tiny.image.image-workana {
+    width: 62px;
+}
+
+.ui.tiny.image.image-remote {
+    width: 52px;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    max-height: 8em;
+    -webkit-transform-style: preserve-3d;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+.big.mail.icon.hire-me-mail-icon {
+    font-size: 57px !important;
+    color: white !important;
+}
+
+.titulo-hire-me {
+    color: white !important;
+}
+
+.ui.two.item.inverted {
+    background: transparent !important;
+}
+
+.ui.menu .item::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 1px;
+    background: transparent !important;
+}
+
+.icone-voltar-noite {
+    color: white !important;
+    font-size: 2em !important;
+    cursor: pointer;
+}
+
+i.left.arrow.icon.icone-voltar {
+    color: #38557c !important;
+    font-size: 2em !important;
+    cursor: pointer;
+}
+
+.ui.center.aligned.compact.segment.segmento-item-app {
+    padding: 10px;
+}
+
+i.big.android.icon {
+    color: #38557c !important;
+}
+
+.ui.divider {
+    margin-top: 4px !important;
+}
+
+.div-topo-flecha {
+    width: 100%;
+    text-align: left;
+    height: 2em;
+    padding: 5px;
+}
+
+.content.texto-descricao-app {
+    padding-top: 2em !important;
+}
+
+.texto-descricao-app {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: white;
+    font-weight: bold;
+    text-align: justify;
+    max-height: 15em !important;
+    font-size: .9em !important;
+}
+
+.icone-voltar {
+    cursor: pointer;
+}
+
+.item {
+    border: none !important;
+}
+
+.div-topo-flecha {
+    width: 100%;
+    text-align: left;
+    height: 1em;
+}
+
+a.header.texto-pefil.texto-perfil-topo {
+    padding-bottom: 20px;
+}
+.item.item-lista-apps {
+    font-weight: bold;
+    font-size: 12px !important;
+    color: white !important;
+    float: left;
+    border-bottom: none !important;
+    border-top: none !important;
+    padding: .6em !important;
+    cursor: pointer
+}
+
+.ui.top.fixed.three.item.menu.menu-topo {
+    color: #444;
+    border-bottom: 1px solid #e5e5e5;
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.description.descricao-app {
+    color: #38557D !important;
+    font-size: 1.1em;
+    display: none !important;
+}
+
+.description.descricao-app-tarde {
+    color: white !important;
+    font-size: 1.1em !important;
+}
+
+.item-menu-topo {
+    color: white !important;
+    cursor: pointer;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+.botao-topo {
+    border-radius: 0px !important;
+    color: #a2a6a4;
+    font-weight: 400;
+}
+
+.titulo-frase {
+    float: right;
+    padding-top: 2.5em;
+    text-align: initial;
+    font-size: 20px;
+    color: #acacac !important;
+    padding-left: 2em;
+}
+
+.link-social {
+    color: #fff !important;
+    cursor: pointer;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.github.icon.icone-github {
+    font-size: 1.2em;
+}
+
+.link-social:hover {
+    color: #000;
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+.item-rodape:hover > .link-social {
+    color: #000;
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+.menu-rodape.ui.menu .item::before {
+    background: transparent !important;
+}
+
+.header.titulo-projeto {
+    color: white !important;
+    font-size: 1.3em;
+}
+
+.icones-plataforma {
+    text-align: left;
+}
+
+.icone-plataforma {
+    cursor: pointer;
+    font-size: 1.8em !important;
+    margin: 0 !important;
+    width: 1.10em !important;
+    text-align: right !important;
+}
+
+.ui.tiny.image.icone-projeto {
+    height: 5em;
+    width: 5em;
+    float: left;
+}
+.content.container-texto-perfil {
+    border: none !important;
+    font-family: 'Poppins', sans-serif;
+}
+.ui.circular.image.container-imagem-perfil {
+    border-radius: 50em !important;
+}
+.ui.compact.centered.segment.segmento-perfil {
+    width: 100% !important;
+    background: transparent !important;;
+    box-shadow: none !important;
+    border: none !important;;
+}
+.ui.centered.card.card-perfil {
+    background: transparent;
+    border: none !important;
+    box-shadow: none !important;
+    max-width: 180px !important;
+}
+a.header.texto-pefil {
+    text-align: center;
+    color: white !important;
+    font-family: 'Poppins', sans-serif !important;
+    letter-spacing: 1 !important;
+}
+
+.segmento-apps {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    margin: 0 auto !important;
+    text-align: center;
+    margin-top: 2% !important;
+}
+
+.ui.segment.lista-apps.segmento-detalhe-app {
+    background: rgba(1, 1, 1, 0.04);
+    border: none;
+    box-shadow: none;
+}
+
+.no-js .owl-carousel,
+.owl-carousel.owl-loaded {
+    display: block;
+    max-width: 21em;
+}
+
+.segmento-apps-detalhes {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    margin: 0 auto !important;
+    text-align: center;
+    margin-top: 2% !important;
+    width: 25em;
+}
+
+.ui.celled.list.lista-apps {
+    overflow-y: auto;
+}
+
+.menu-rodape {
+    background: transparent !important;
+    color: #f4f4f4 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    font-size: 30px !important;
+}
+
+.card {
+    border-radius: 0px !important;
+}
+
+.item.item-lista-apps.item-esq {
+    width: 94px;
+}
+
+.item.item-lista-apps.item-meio {
+    width: 122px;
+}
+
+.item.item-lista-apps.item-dir {
+    width: 95px;
+}
+
+.ui.menu .item::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 1px;
+    background: #fff;
+}
+
+.titulo-site {
+    font-size: 17px;
+}
+
+h3 {
+    font-family: 'Droid Sans', sans-serif;
+}
+
+.ui.menu .item {
+    line-height: 1;
+    text-transform: none;
+    color: #a2a6a4;
+    font-weight: 400;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+
+.right.menu.menu-direita {
+    padding-right: 15%;
+}
+
+.left.menu.menu-esquerda {
+    padding-left: 10%;
+}
+
+.botao-topo:hover {
+    color: #000;
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+.ui.pointing.below.teal.label.label-hire-me {
+    position: absolute;
+    text-align: center;
+    bottom: 70px;
+    padding: 7px;
+    margin: 0px;
+}
+
+img.ui.tiny.image.image-upwork {
+    width: 60px!important;
+    display: inline-block;
+}
+
+.modal-hire-me {
+    text-align: center !important;
+}
+
+.big.close.icon {
+    color: white !important;
+    font-size: 60px !important;
+}
+
+@media only screen and (max-device-width: 630px) {
+
+    .ui.pointing.below.teal.label.label-hire-me {
+        position: absolute;
+        text-align: center;
+        bottom: 175px;
+        margin: 0;
+        font-size: 30px;
+        padding: 13px;
+    }
+    .ui.centered.card.card-perfil {
+        background: 0 0;
+        border: none!important;
+        box-shadow: none!important;
+        max-width: 300px !important;
+    }
+    a.header.texto-pefil.texto-perfil-topo {
+        padding-bottom: 30px;
+        width: 100%;
+        line-height: 1;
+        font-size: 40px;
+
+    }
+    a.header.texto-pefil.texto-perfil-abaixo {
+        padding-top: 30px;
+    }
+    a.header.texto-pefil {
+        font-size: 37px !important;
+    }
+    h5.titulo-hire-me {
+        font-size: 30px;
+    }
+    .ui.tiny.image.image-remote {
+        width: 85px;
+    }
+    .ui.header.thank-you {
+        font-size: 65px;
+    }
+    .ui.tiny.image.image-workana {
+        width: 98px;
+    }
+    .ui.divider:not(.vertical):not(.horizontal) {
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
+    }
+    img.ui.tiny.image.image-upwork {
+        width: 108px!important;
+        margin-top: 22px;
+    }
+    .description {
+        display: none;
+    }
+    .ui.menu.two.item .item {
+        width: 50%;
+        font-size: 50px;
+    }
+    i.big.mail.icon.hire-me-mail-icon {
+        font-size: 125px !important;
+    }
+    .ui.celled.list.lista-apps {
+        overflow-y: auto;
+        width: 60em!important;
+        height: 460px;
+    }
+    .item.item-lista-apps.item-esq {
+        width: 280px;
+        height: 200px;
+    }
+    .item.item-lista-apps.item-meio {
+        width: 250px;
+        height: 200px;
+    }
+    .hire-me-link {
+        display: inline-block;
+        margin-right: 45px;
+        text-align: center;
+    }
+    .item.item-lista-apps.item-dir {
+        width: 280px;
+        height: 200px;
+    }
+    img.ui.tiny.image {
+        width: 17em;
+    }
+    .description.descricao-app-tarde {
+        display: none !important;
+    }
+    .menu-rodape {
+        background: transparent !important;
+        color: #f4f4f4 !important;
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        font-size: 70px !important;
+    }
+    .ui.menu.three.item .item {
+        width: 50.333%;
+    }
+    .segmento-apps-detalhes {
+        background: transparent !important;
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        margin: 0 auto !important;
+        text-align: center;
+        margin-top: 5% !important;
+        width: 60em;
+    }
+    .texto-descricao-app {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        color: white;
+        font-weight: bold;
+        text-align: justify;
+        max-height: 30em !important;
+        font-size: 2.6em !important;
+        /* width: 15em; */
+        line-height: 1.5;
+        display: none !important;
+    }
+    .ui.center.aligned.compact.segment.segmento-item-app {
+        padding: 30px;
+        margin-right: 30px;
+    }
+    img.ui.mini.image {
+        width: 7em !important;
+    }
+    .no-js .owl-carousel,
+    .owl-carousel.owl-loaded {
+        display: block;
+        max-width: 70em;
+        margin-top: 90px;
+        margin-left: 60px;
+    }
+    i#botao-voltar {
+        font-size: 7em !important;
+    }
+    .owl-carousel .owl-item img {
+        display: block;
+        width: 100%;
+        /* max-height: 8em; */
+        -webkit-transform-style: preserve-3d;
+        border: 2px solid white;
+        border-radius: 6px;
+        height: 240px;
+        width: 196px;
+        /* margin-right: 20px !important; */
+    }
+    .big.close.icon {
+        color: #fff!important;
+        margin-top: 200px!important;
+        font-size: 100px!important;
+    }
+    i.big.mail.icon.hire-me-mail-icon {
+        font-size: 100px!important;
+    }
+}
+
+.ui.small.mini.imagem-menu-cel {
+    height: 45px;
+    margin-right: 10px !important;
+}
+
+.item.item-menu-cel {
+    display: inline-block;
+}

@@ -1,0 +1,166 @@
+<html lang="pt" xmlns:data-app="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+    <link rel="icon" sizes="192x192" href="'assets/images/foto.png' ?>">
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 62x62" href="'assets/images/foto.png'?>"/>
+
+    <meta property="og:description" content="This is my webpage, check out my work and contact me if you want to start some great projects :).">
+    <meta property="og:image" content="'assets/images/site.png' ?>"/>
+    <meta property="og:image:height" content="512">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="768">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Luciano Cardoso - Web and Mobile Developer">
+    <meta property="og:title" content="Luciano Cardoso - Web and Mobile Developer">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://lucianocardoso.eti.br">
+
+    <link rel="stylesheet" href="assets/css/estilo.min.css">
+    <title>Luciano Cardoso - Home</title>
+</head>
+<body>
+<div class="ui two item inverted menu menu-topo" style="background: transparent">
+    <p></p>
+</div>
+</div>
+<div class="ui modal modal-about-me">
+    <div class="content">
+        <img class="ui small circular image" src="<?php base_url() . 'blog/uploads/luciano.jpg' ?>">
+    </div>
+</div>
+<div class="main-div">
+    <!--
+    <div class="ui small top fixed menu menu-topo">
+        <div class="left menu menu-esquerda">
+            <div class="item">
+                <div class="titulo-site">Luciano Cardoso</div>
+            </div>
+
+        </div>
+        <div class="right menu menu-direita">
+            <div id="lnkProjetos" class="item item-menu-topo">
+                <a class="botao-topo">Projetos</a>
+            </div>
+            <div class="item item-menu-topo">
+                <a class="botao-topo">Contato</a>
+            </div>
+        </div>
+    </div>!-->
+    <div class="ui compact centered segment segmento-perfil">
+        <div class="ui centered small card card-perfil">
+            <a class="header texto-pefil texto-perfil-topo">Hi, my name is Luciano Cardoso.</a>
+            <div class="ui circular image container-imagem-perfil">
+                <img class="imagem-perfil"
+                     src="assets/images/luciano_cardoso.jpg"/>
+            </div>
+            <div class="content container-texto-perfil">
+                <a class="header texto-pefil texto-perfil-abaixo">I am a Software Developer <i
+                            class="smile icon"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui compact centered segment segmento-apps">
+        <div class="ui celled list lista-apps">
+            <div class="item item-lista-apps item-esq">
+                <div class="content conteudo-app" data-app="quatroporum">
+                    <div class="ui square image icone-app ">
+                        <a target="_blank"
+                           href="https://play.google.com/store/apps/details?id=com.cardocha.quatroporumparabeber"> <img
+                                    class="ui tiny image"
+                                    src="assets/images/41.png"/></a>
+                    </div>
+                    <div class="description descricao-app">4x1</div>
+                </div>
+            </div>
+            <div class="item item-lista-apps item-meio">
+                <div class="content conteudo-app" data-app="suecabrasileira">
+                    <div class="ui square image icone-app ">
+                        <a target="_blank"
+                           href="https://play.google.com/store/apps/details?id=com.cardocha.suecabrasileira"> <img
+                                    class="ui tiny image"
+                                    src="assets/images/sb.png"/>
+                    </div>
+                    <div class="description descricao-app">Sueca Brasileira</div>
+                </div>
+            </div>
+            <div class="item item-lista-apps item-dir">
+                <div class="content conteudo-app" data-app="vote">
+                    <div class="ui square image icone-app">
+                        <a target="_blank" href="https://play.google.com/store/apps/details?id=cardocha.com.vote"> <img
+                                    class="ui tiny image"
+                                    src="assets/images/voto.png"/></a>
+                    </div>
+                    <div class="description descricao-app">Vote</div>
+                </div>
+            </div>
+            <div class="item item-lista-apps item-dir">
+                <div class="content conteudo-app" data-app="vote">
+                    <div class="ui square image icone-app">
+                        <a target="_blank" href="http://shivananda.com.br/"> <img class="ui tiny image"
+                                                                                  src="assets/images/icone_pequeno_shivananda1.png"/></a>
+                    </div>
+                    <div class="description descricao-app">Shivananda</div>
+                </div>
+            </div>
+        </div>
+        <div class="seven item horizontal menu menu-celular">
+        </div>
+    </div>
+
+    <div style="display: none" class="ui compact centered segment  segmento-apps-detalhes">
+        <div class="ui segment lista-apps segmento-detalhe-app">
+            <div class="div-topo-flecha"><i id="botao-voltar" class="left arrow icon icone-voltar"></i></div>
+            <div class="item item-detalhe-app">
+                <div class="content conteudo-app ">
+                    <div class="ui square image icone-app">
+                        <img id="imgApp" class="ui tiny image"
+                             src="assets/images/41.png"/>
+                    </div>
+                    <div id="tituloApp" class="description descricao-app">4x1</div>
+                </div>
+                <div class="texto-descricao-app">
+                    <div id="descricaoApp" class="description">
+
+                    </div>
+                </div>
+                <div class="ui divider"></div>
+                <div id="listaItens" class="ui celled horizontal list">
+
+
+                </div>
+                <div class="ui divider"></div>
+                <div class="owl-carousel">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui bottom fixed three item menu menu-rodape">
+
+        <div class="item">
+            <div class="item  item-rodape">
+                <a target="_blank" href="https://twitter.com/__cardocha__" class="link-social"><i
+                            class="twitter  icon"></i></a>
+            </div>
+            <div class="item item-rodape">
+                <a target="_blank" href="https://www.linkedin.com/in/luciano-cardoso-819563100" class="link-social"><i
+                            class="linkedin   icon"></i></a>
+            </div>
+            <div class="item item-rodape">
+                <a target="_blank" href="https://github.com/cardocha" class="link-social"><i
+                            class="github icon icone-github"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script> var Util = {
+        baseUrl: "<?php echo $this->config->base_url();?>",
+        horaAtual: "<?php echo date('H:i:s');?>"
+    };
+</script>
+</body>
+</html>
