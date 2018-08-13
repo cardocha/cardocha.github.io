@@ -430,6 +430,10 @@ img.ui.tiny.image.image-upwork {
 
 @media only screen and (max-device-width: 630px) {
 
+    img.ui.tiny.image.imagem-festa-br {
+        width: 15.5em !important;
+    }
+
     .ui.pointing.below.teal.label.label-hire-me {
         position: absolute;
         text-align: center;
@@ -593,4 +597,7 @@ img.ui.tiny.image.image-upwork {
 
 .item.item-menu-cel {
     display: inline-block;
+}
+img.ui.tiny.image.imagem-festa-br {
+    width: 74px;
 }
