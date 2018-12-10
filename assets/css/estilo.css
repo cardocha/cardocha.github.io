@@ -444,7 +444,10 @@ img.ui.tiny.image.image-upwork {
     img.ui.tiny.image.imagem-festa-br {
         width: 15.5em !important;
     }
-
+    .ui.tiny.image.imagem-soundpiot {
+        width: 14.5em!important;
+        margin-top: 12px;
+    }
     .ui.pointing.below.teal.label.label-hire-me {
         position: absolute;
         text-align: center;
@@ -611,4 +614,7 @@ img.ui.tiny.image.image-upwork {
 }
 img.ui.tiny.image.imagem-festa-br {
     width: 74px;
+}
+.ui.tiny.image.imagem-soundpiot {
+    width: 70px;
 }
