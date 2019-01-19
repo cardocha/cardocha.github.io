@@ -440,9 +440,29 @@ img.ui.tiny.image.image-upwork {
 }
 
 @media only screen and (max-device-width: 630px) {
+    
+    item.item-app {
+        padding: 10px !important;
+    }
+
+    .ui.celled.horizontal.list.lista-apps-cardocha {
+        width: 70% !important;
+        text-align: left;
+    }
+    
+    .ui.square.image.icone-app.icone-shiv {
+        margin-left: 13px;
+    }
 
     img.ui.tiny.image.imagem-festa-br {
         width: 15.5em !important;
+    }
+    .ui.tiny.image.imagem-appbr {
+        width: 15.5em !important;
+    }
+    .ui.square.image.icone-app.icone-sp {
+        margin-left: 35px;
+        margin-top: 10px;
     }
     .ui.tiny.image.imagem-soundpiot {
         width: 14.5em!important;
@@ -508,7 +528,7 @@ img.ui.tiny.image.image-upwork {
     .ui.celled.list.lista-apps {
         overflow-y: auto;
         width: 60em!important;
-        height: 460px;
+        height: 700px;
     }
     .item.item-lista-apps.item-esq {
         width: 280px;
@@ -607,7 +627,7 @@ img.ui.tiny.image.image-upwork {
 .ui.small.mini.imagem-menu-cel {
     height: 45px;
     margin-right: 10px !important;
-}
+}   
 
 .item.item-menu-cel {
     display: inline-block;
@@ -617,4 +637,9 @@ img.ui.tiny.image.imagem-festa-br {
 }
 .ui.tiny.image.imagem-soundpiot {
     width: 70px;
+    margin-top: 5px;
+}
+
+.ui.tiny.image.imagem-appbr {
+    width: 80px;
 }
