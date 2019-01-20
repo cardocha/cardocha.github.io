@@ -441,10 +441,14 @@ img.ui.tiny.image.image-upwork {
 
 @media only screen and (max-device-width: 630px) {
     
-    item.item-app {
-        padding: 10px !important;
+    .ui.bottom.fixed.three.item.menu.menu-rodape {
+        max-height: 150px;
     }
 
+    .item.item-rodape {
+        padding: 0px !important;
+    } 
+    
     .ui.celled.horizontal.list.lista-apps-cardocha {
         width: 70% !important;
         text-align: left;
