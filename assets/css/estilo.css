@@ -439,15 +439,15 @@ img.ui.tiny.image.image-upwork {
     font-size: 60px !important;
 }
 
+.ui.bottom.fixed.three.item.menu.menu-rodape {
+    max-height: 80px;
+}
+
 @media only screen and (max-device-width: 630px) {
     
     .ui.bottom.fixed.three.item.menu.menu-rodape {
         max-height: 150px;
     }
-
-    .item.item-rodape {
-        padding: 0px !important;
-    } 
     
     .ui.celled.horizontal.list.lista-apps-cardocha {
         width: 70% !important;
