@@ -25,8 +25,7 @@ body {
     max-height: 100% !important;
     height: 70%;
     -webkit-transition: background-image 3s ease-in-out;
-    transition: background-image 3s ease-in-out;
-    ;
+    transition: background-image 3s ease-in-out;;
 }
 
 .body-tarde-2 {
@@ -41,8 +40,7 @@ body {
     max-height: 100% !important;
     height: 70%;
     -webkit-transition: background-image 3s ease-in-out;
-    transition: background-image 3s ease-in-out;
-    ;
+    transition: background-image 3s ease-in-out;;
 }
 
 .body-tarde-noite {
@@ -57,13 +55,12 @@ body {
     max-height: 100% !important;
     height: 70%;
     -webkit-transition: background-image 3s ease-in-out;
-    transition: background-image 3s ease-in-out;
-    ;
+    transition: background-image 3s ease-in-out;;
 }
 
 .hire-me-link {
     display: inline-block;
-    padding:20px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -119,6 +116,32 @@ i.left.arrow.icon.icone-voltar {
     font-size: 2em !important;
     cursor: pointer;
 }
+.titulo-app-modal{
+    text-align: center;
+}
+
+span.nome-membro {
+    display: block;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    padding-top: 5px;
+}
+
+.ui.center.aligned.basic.segment.segmento-cab-modal-app {
+    padding: 0;
+}
+
+span.titulo-membro {
+    padding-left: 30px;
+    font-size: 12px;
+    font-style: italic;
+    padding-bottom: 15px;
+}
+
+.image-app {
+    cursor: pointer;
+    vertical-align: bottom !important;
+}
 
 .ui.center.aligned.compact.segment.segmento-item-app {
     padding: 10px;
@@ -170,6 +193,7 @@ i.big.android.icon {
 a.header.texto-pefil.texto-perfil-topo {
     padding-bottom: 20px;
 }
+
 .item.item-lista-apps {
     font-weight: bold;
     font-size: 12px !important;
@@ -275,25 +299,30 @@ a.header.texto-pefil.texto-perfil-topo {
     width: 5em;
     float: left;
 }
+
 .content.container-texto-perfil {
     border: none !important;
     font-family: 'Poppins', sans-serif;
 }
+
 .ui.circular.image.container-imagem-perfil {
     border-radius: 50em !important;
 }
+
 .ui.compact.centered.segment.segmento-perfil {
     width: 100% !important;
     background: transparent !important;;
     box-shadow: none !important;
     border: none !important;;
 }
+
 .ui.centered.card.card-perfil {
     background: transparent;
     border: none !important;
     box-shadow: none !important;
     max-width: 180px !important;
 }
+
 a.header.texto-pefil {
     text-align: center;
     color: white !important;
@@ -415,7 +444,7 @@ h3 {
 }
 
 img.ui.tiny.image.image-upwork {
-    width: 60px!important;
+    width: 60px !important;
     display: inline-block;
 }
 
@@ -433,16 +462,57 @@ img.ui.tiny.image.image-upwork {
 }
 
 @media only screen and (max-device-width: 630px) {
-    
+
     .ui.bottom.fixed.three.item.menu.menu-rodape {
         max-height: 150px;
     }
+
+    i.huge.inverted.outline.star.icon {
+        font-size: 175px;
+    }
+    img.ui.centered.small.image.app-imagem-modal {
+        width: 315px;
+    }
+
+    .content.conteudo-team {
+        margin-top: 50px;
+    }
+    h5.ui.title.titulo-team {
+        font-size: 35px;
+    }
+
+
+    h3.ui.center.striped.aligned.text.titulo-app-modal {
+        font-size: 40px;
+    }
+
+    a.ui.basic.teal.button.app-url-modal {
+        font-size: 38px;
+    }
+
+    .ui.small.text.team-member {
+        font-size: 30px !important;
+        padding-bottom: 25px;
+    }
+
+    span.titulo-membro {
+        font-size: 26px;
+    }
     
+    .ui.green.ok.inverted.button {
+        font-size: 33px;
+        margin-top: 75px;
+    }
+
+    .actions {
+        text-align: center !important;
+    }
+
     .ui.celled.horizontal.list.lista-apps-cardocha {
         width: 70% !important;
         text-align: left;
     }
-    
+
     .ui.square.image.icone-app.icone-shiv {
         margin-left: 13px;
     }
@@ -450,17 +520,21 @@ img.ui.tiny.image.image-upwork {
     img.ui.tiny.image.imagem-festa-br {
         width: 15.5em !important;
     }
+
     .ui.tiny.image.imagem-appbr {
         width: 15.5em !important;
     }
+
     .ui.square.image.icone-app.icone-sp {
         margin-left: 35px;
         margin-top: 10px;
     }
+
     .ui.tiny.image.imagem-soundpiot {
-        width: 14.5em!important;
+        width: 14.5em !important;
         margin-top: 12px;
     }
+
     .ui.pointing.below.teal.label.label-hire-me {
         position: absolute;
         text-align: center;
@@ -469,12 +543,14 @@ img.ui.tiny.image.image-upwork {
         font-size: 30px;
         padding: 13px;
     }
+
     .ui.centered.card.card-perfil {
         background: 0 0;
-        border: none!important;
-        box-shadow: none!important;
+        border: none !important;
+        box-shadow: none !important;
         max-width: 300px !important;
     }
+
     a.header.texto-pefil.texto-perfil-topo {
         padding-bottom: 30px;
         width: 100%;
@@ -482,70 +558,89 @@ img.ui.tiny.image.image-upwork {
         font-size: 40px;
 
     }
+
     a.header.texto-pefil.texto-perfil-abaixo {
         padding-top: 30px;
     }
+
     a.header.texto-pefil {
         font-size: 37px !important;
     }
+
     h5.titulo-hire-me {
         font-size: 30px;
     }
+
     .ui.tiny.image.image-remote {
         width: 85px;
     }
+
     .ui.header.thank-you {
         font-size: 65px;
     }
+
     .ui.tiny.image.image-workana {
         width: 98px;
     }
+
     .ui.divider:not(.vertical):not(.horizontal) {
         border-top: 1px solid #fff;
         border-bottom: 1px solid rgba(255, 255, 255, .1);
     }
+
     img.ui.tiny.image.image-upwork {
-        width: 108px!important;
+        width: 108px !important;
         margin-top: 22px;
     }
+
     .description {
         display: none;
     }
+
     .ui.menu.two.item .item {
         width: 50%;
         font-size: 50px;
     }
+
     i.big.mail.icon.hire-me-mail-icon {
         font-size: 125px !important;
     }
+
     .ui.celled.list.lista-apps {
         overflow-y: auto;
-        width: 60em!important;
+        width: 60em !important;
         height: 700px;
     }
+
     .item.item-lista-apps.item-esq {
         width: 280px;
         height: 200px;
     }
+
     .item.item-lista-apps.item-meio {
         width: 250px;
         height: 200px;
     }
+
     .hire-me-link {
         display: inline-block;
         margin-right: 45px;
         text-align: center;
     }
+
     .item.item-lista-apps.item-dir {
         width: 280px;
         height: 200px;
     }
+
     img.ui.tiny.image {
         width: 17em;
     }
+
     .description.descricao-app-tarde {
         display: none !important;
     }
+
     .menu-rodape {
         background: transparent !important;
         color: #f4f4f4 !important;
@@ -554,9 +649,11 @@ img.ui.tiny.image.image-upwork {
         box-shadow: none !important;
         font-size: 70px !important;
     }
+
     .ui.menu.three.item .item {
         width: 50.333%;
     }
+
     .segmento-apps-detalhes {
         background: transparent !important;
         border: none !important;
@@ -567,6 +664,7 @@ img.ui.tiny.image.image-upwork {
         margin-top: 5% !important;
         width: 60em;
     }
+
     .texto-descricao-app {
         padding-top: 1em;
         padding-bottom: 1em;
@@ -579,13 +677,16 @@ img.ui.tiny.image.image-upwork {
         line-height: 1.5;
         display: none !important;
     }
+
     .ui.center.aligned.compact.segment.segmento-item-app {
         padding: 30px;
         margin-right: 30px;
     }
+
     img.ui.mini.image {
         width: 7em !important;
     }
+
     .no-js .owl-carousel,
     .owl-carousel.owl-loaded {
         display: block;
@@ -593,9 +694,11 @@ img.ui.tiny.image.image-upwork {
         margin-top: 90px;
         margin-left: 60px;
     }
+
     i#botao-voltar {
         font-size: 7em !important;
     }
+
     .owl-carousel .owl-item img {
         display: block;
         width: 100%;
@@ -607,27 +710,31 @@ img.ui.tiny.image.image-upwork {
         width: 196px;
         /* margin-right: 20px !important; */
     }
+
     .big.close.icon {
-        color: #fff!important;
-        margin-top: 200px!important;
-        font-size: 100px!important;
+        color: #fff !important;
+        margin-top: 200px !important;
+        font-size: 100px !important;
     }
+
     i.big.mail.icon.hire-me-mail-icon {
-        font-size: 100px!important;
+        font-size: 100px !important;
     }
 }
 
 .ui.small.mini.imagem-menu-cel {
     height: 45px;
     margin-right: 10px !important;
-}   
+}
 
 .item.item-menu-cel {
     display: inline-block;
 }
+
 img.ui.tiny.image.imagem-festa-br {
     width: 74px;
 }
+
 .ui.tiny.image.imagem-soundpiot {
     width: 70px;
     margin-top: 5px;

@@ -23,9 +23,10 @@ module.exports = function (grunt) {
             },
 
             js: {
-                src: ['assets/js/lib/jquery/jquery-3.1.1.min.js',
+                src: [
+                    'assets/js/lib/jquery/jquery-3.3.1.min.js',
                     'assets/js/lib/semanticui/semantic.min.js',
-                    'assets/js/lib/moment/moment.js',
+                    'assets/js/lib/sprintf/sprintf.min.js',
                     'assets/js/home/home.js'
                 ],
                 dest: 'assets/js/libs.js'
