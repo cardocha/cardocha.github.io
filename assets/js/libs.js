@@ -23,91 +23,114 @@ if(n.refresh(),e.fn.api!==i)if(t=C.api("get request"),o=C.api("was cancelled"))n
 !function(){"use strict";var g={not_string:/[^s]/,not_bool:/[^t]/,not_type:/[^T]/,not_primitive:/[^v]/,number:/[diefg]/,numeric_arg:/[bcdiefguxX]/,json:/[j]/,not_json:/[^j]/,text:/^[^\x25]+/,modulo:/^\x25{2}/,placeholder:/^\x25(?:([1-9]\d*)\$|\(([^)]+)\))?(\+)?(0|'[^$])?(-)?(\d+)?(?:\.(\d+))?([b-gijostTuvxX])/,key:/^([a-z_][a-z_\d]*)/i,key_access:/^\.([a-z_][a-z_\d]*)/i,index_access:/^\[(\d+)\]/,sign:/^[+-]/};function y(e){return function(e,t){var r,n,i,s,a,o,p,c,l,u=1,f=e.length,d="";for(n=0;n<f;n++)if("string"==typeof e[n])d+=e[n];else if("object"==typeof e[n]){if((s=e[n]).keys)for(r=t[u],i=0;i<s.keys.length;i++){if(null==r)throw new Error(y('[sprintf] Cannot access property "%s" of undefined value "%s"',s.keys[i],s.keys[i-1]));r=r[s.keys[i]]}else r=s.param_no?t[s.param_no]:t[u++];if(g.not_type.test(s.type)&&g.not_primitive.test(s.type)&&r instanceof Function&&(r=r()),g.numeric_arg.test(s.type)&&"number"!=typeof r&&isNaN(r))throw new TypeError(y("[sprintf] expecting number but found %T",r));switch(g.number.test(s.type)&&(c=0<=r),s.type){case"b":r=parseInt(r,10).toString(2);break;case"c":r=String.fromCharCode(parseInt(r,10));break;case"d":case"i":r=parseInt(r,10);break;case"j":r=JSON.stringify(r,null,s.width?parseInt(s.width):0);break;case"e":r=s.precision?parseFloat(r).toExponential(s.precision):parseFloat(r).toExponential();break;case"f":r=s.precision?parseFloat(r).toFixed(s.precision):parseFloat(r);break;case"g":r=s.precision?String(Number(r.toPrecision(s.precision))):parseFloat(r);break;case"o":r=(parseInt(r,10)>>>0).toString(8);break;case"s":r=String(r),r=s.precision?r.substring(0,s.precision):r;break;case"t":r=String(!!r),r=s.precision?r.substring(0,s.precision):r;break;case"T":r=Object.prototype.toString.call(r).slice(8,-1).toLowerCase(),r=s.precision?r.substring(0,s.precision):r;break;case"u":r=parseInt(r,10)>>>0;break;case"v":r=r.valueOf(),r=s.precision?r.substring(0,s.precision):r;break;case"x":r=(parseInt(r,10)>>>0).toString(16);break;case"X":r=(parseInt(r,10)>>>0).toString(16).toUpperCase()}g.json.test(s.type)?d+=r:(!g.number.test(s.type)||c&&!s.sign?l="":(l=c?"+":"-",r=r.toString().replace(g.sign,"")),o=s.pad_char?"0"===s.pad_char?"0":s.pad_char.charAt(1):" ",p=s.width-(l+r).length,a=s.width&&0<p?o.repeat(p):"",d+=s.align?l+r+a:"0"===o?l+a+r:a+l+r)}return d}(function(e){if(p[e])return p[e];var t,r=e,n=[],i=0;for(;r;){if(null!==(t=g.text.exec(r)))n.push(t[0]);else if(null!==(t=g.modulo.exec(r)))n.push("%");else{if(null===(t=g.placeholder.exec(r)))throw new SyntaxError("[sprintf] unexpected placeholder");if(t[2]){i|=1;var s=[],a=t[2],o=[];if(null===(o=g.key.exec(a)))throw new SyntaxError("[sprintf] failed to parse named argument key");for(s.push(o[1]);""!==(a=a.substring(o[0].length));)if(null!==(o=g.key_access.exec(a)))s.push(o[1]);else{if(null===(o=g.index_access.exec(a)))throw new SyntaxError("[sprintf] failed to parse named argument key");s.push(o[1])}t[2]=s}else i|=2;if(3===i)throw new Error("[sprintf] mixing positional and named placeholders is not (yet) supported");n.push({placeholder:t[0],param_no:t[1],keys:t[2],sign:t[3],pad_char:t[4],align:t[5],width:t[6],precision:t[7],type:t[8]})}r=r.substring(t[0].length)}return p[e]=n}(e),arguments)}function e(e,t){return y.apply(null,[e].concat(t||[]))}var p=Object.create(null);"undefined"!=typeof exports&&(exports.sprintf=y,exports.vsprintf=e),"undefined"!=typeof window&&(window.sprintf=y,window.vsprintf=e,"function"==typeof define&&define.amd&&define(function(){return{sprintf:y,vsprintf:e}}))}();
 $(document).ready(function () {
 
-    var projetos = [
-        {
-            id: 1,
-            title: "4x1 Drinking Game",
-            url: "https://play.google.com/store/apps/details?id=com.cardocha.quatroporumparabeber",
-            img: "assets/images/41.png",
-            alone: false
-        },
-        {
-            id: 2,
-            title: "Sueca Brasileira Drinking Game",
-            url: "https://play.google.com/store/apps/details?id=com.cardocha.suecabrasileira",
-            img: "assets/images/sb.png",
-            alone: false
-        },
-        {
-            id: 3,
-            title: "Vote! Drinking Game",
-            url: "https://play.google.com/store/apps/details?id=cardocha.com.vote",
-            img: "assets/images/voto.png",
-            alone: false
-        },
-        {
-            id: 4,
-            title: "Festa Brasileira Drinking Game",
-            url: "https://play.google.com/store/apps/details?id=com.cardocha.festabrasileira",
-            img: "assets/images/festa_br.png",
-            alone: false
+    var alreadyKnowMe = localStorage.getItem("already-know-me");
 
-        },
-        {
-            id: 5,
-            title: "Soundpiot firefox extension",
-            url: "https://addons.mozilla.org/pt-BR/firefox/addon/soundpiot/",
-            img: "assets/images/soundpiot48.png",
-            alone: true
+    if (alreadyKnowMe !== null && alreadyKnowMe) {
+        $(".texto-perfil-topo").show();
+        $(".container-texto-perfil").show();
+        renderProjects();
+    } else {
+        setTimeout(function () {
+            $(".texto-perfil-topo").transition('fade');
+        }, 1000);
 
-        },
-        {
-            id: 6,
-            title: "AppBrasileiro API",
-            url: "https://appbrasileiro.com.br",
-            img: "assets/images/icone_appbr.png",
-            alone: true
-        }
-    ];
+        setTimeout(function () {
+            $(".container-texto-perfil").transition('pulse', function () {
+                setTimeout(function () {
+                    renderProjects();
+                }, 600)
 
-    var projectTemplate =
-        "<div class='item item-app' data-id='%(id)i'>\
-        <img class='ui tiny image image-app' src='%(img)s'/>\
-        </div>";
+            })
+        }, 2500);
+    }
 
-    var secs = 300;
-    projetos.forEach(function (project, index) {
-        var projectItem = $(sprintf(projectTemplate, project));
-        var thumbTemplate =
-            $("<div style='vertical-align: middle;vertical-align: top; padding-top: 15px;' class='item item-app' data-id='%(id)i'>\
+    function renderProjects() {
+        $(".menu-rodape").transition('fade in');
+        var projetos = [
+            {
+                id: 1,
+                title: "4x1 Drinking Game",
+                url: "https://play.google.com/store/apps/details?id=com.cardocha.quatroporumparabeber",
+                img: "assets/images/41.png",
+                alone: false
+            },
+            {
+                id: 2,
+                title: "Sueca Brasileira Drinking Game",
+                url: "https://play.google.com/store/apps/details?id=com.cardocha.suecabrasileira",
+                img: "assets/images/sb.png",
+                alone: false
+            },
+            {
+                id: 3,
+                title: "Vote! Drinking Game",
+                url: "https://play.google.com/store/apps/details?id=cardocha.com.vote",
+                img: "assets/images/voto.png",
+                alone: false
+            },
+            {
+                id: 4,
+                title: "Festa Brasileira Drinking Game",
+                url: "https://play.google.com/store/apps/details?id=com.cardocha.festabrasileira",
+                img: "assets/images/festa_br.png",
+                alone: false
+
+            },
+            {
+                id: 5,
+                title: "Soundpiot firefox extension",
+                url: "https://addons.mozilla.org/pt-BR/firefox/addon/soundpiot/",
+                img: "assets/images/soundpiot48.png",
+                alone: true
+
+            },
+            {
+                id: 6,
+                title: "AppBrasileiro API",
+                url: "https://appbrasileiro.com.br",
+                img: "assets/images/icone_appbr.png",
+                alone: true
+            }
+        ];
+
+        localStorage.setItem("already-know-me", "true");
+        var projectTemplate =
+            "<div class='item item-app' data-id='%(id)i'>\
+            <img class='ui tiny image image-app' src='%(img)s'/>\
+            </div>";
+
+        var secs = 300;
+        projetos.forEach(function (project, index) {
+            var projectItem = $(sprintf(projectTemplate, project));
+            var thumbTemplate =
+                $("<div style='display:none;vertical-align: middle;vertical-align: top; padding-top: 15px;' class='item item-app' data-id='%(id)i'>\
         <i class='huge inverted outline star icon'></i>\
         </div>");
-        projectItem.attr('style', 'display:none');
-        projectItem.click(function () {
-            var projetoSelecionado = projetos[project.id - 1];
-            $(".app-imagem-modal").attr('src', projetoSelecionado.img);
-            $(".titulo-app-modal").text(projetoSelecionado.title);
-            $(".app-url-modal").attr('href', projetoSelecionado.url)
-            $(".titulo-team").text(projetoSelecionado.alone ? "Developer" : "Team")
-            if (projetoSelecionado.alone)
-                $(".member-rapha").hide();
-            else
-                $(".member-rapha").show();
+            projectItem.attr('style', 'display:none');
+            projectItem.click(function () {
+                var projetoSelecionado = projetos[project.id - 1];
+                $(".app-imagem-modal").attr('src', projetoSelecionado.img);
+                $(".titulo-app-modal").text(projetoSelecionado.title);
+                $(".app-url-modal").attr('href', projetoSelecionado.url)
+                $(".titulo-team").text(projetoSelecionado.alone ? "Developer" : "Team")
+                if (projetoSelecionado.alone)
+                    $(".member-rapha").hide();
+                else
+                    $(".member-rapha").show();
 
-            $(".app-detalhe-modal").modal({
-                transition: 'fade in'
+                $(".app-detalhe-modal").modal({
+                    transition: 'fade in'
+                })
+                    .modal('show');
             })
-                .modal('show');
+            $(".lista-apps-cardocha").append(projectItem);
+            $(".lista-apps-cardocha").append(thumbTemplate);
+            thumbTemplate.transition('slide up');
+            secs += 300;
+            setTimeout(function () {
+                projectItem.transition('browse')
+                thumbTemplate.remove();
+            }, secs);
         })
-        $(".lista-apps-cardocha").append(projectItem);
-        $(".lista-apps-cardocha").append(thumbTemplate);
-        secs += 300;
-        setTimeout(function () {
-            projectItem.transition('browse')
-            thumbTemplate.remove();
-        }, secs);
-
-
-    })
-
+    }
 });

@@ -127,7 +127,8 @@ i.left.arrow.icon.icone-voltar {
     font-size: 2em !important;
     cursor: pointer;
 }
-.titulo-app-modal{
+
+.titulo-app-modal {
     text-align: center;
 }
 
@@ -472,15 +473,33 @@ img.ui.tiny.image.image-upwork {
     max-height: 80px;
 }
 
+.ui.tiny.image.image-dev-to {
+    width: 45px;
+    margin-top: 15px;
+}
+
 @media only screen and (max-device-width: 630px) {
 
     .ui.bottom.fixed.three.item.menu.menu-rodape {
         max-height: 150px;
     }
 
+    .ui.tiny.image.image-dev-to {
+        width: 45px;
+        margin-top: 15px;
+    }
+
+
+    .ui.tiny.image.image-dev-to {
+        width: 105px;
+        margin-top: 30px;
+    }
+
+
     i.huge.inverted.outline.star.icon {
         font-size: 175px;
     }
+
     img.ui.centered.small.image.app-imagem-modal {
         width: 315px;
     }
@@ -488,6 +507,7 @@ img.ui.tiny.image.image-upwork {
     .content.conteudo-team {
         margin-top: 50px;
     }
+
     h5.ui.title.titulo-team {
         font-size: 35px;
     }
@@ -509,7 +529,7 @@ img.ui.tiny.image.image-upwork {
     span.titulo-membro {
         font-size: 26px;
     }
-    
+
     .ui.green.ok.inverted.button {
         font-size: 33px;
         margin-top: 75px;
