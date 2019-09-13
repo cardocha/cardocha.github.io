@@ -742,7 +742,7 @@ img.ui.tiny.image.image-upwork {
     }
     
     .form-paypal{
-        display:none;
+        visibility: hidden;
     }
 }
 
