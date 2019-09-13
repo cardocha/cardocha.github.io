@@ -44,6 +44,11 @@ $(document).ready(function () {
         }, 2500);
     }
 
+    setTimeout(function () {
+        $(".form-paypal").transition('tada');
+    }, 5000);
+
+
     function renderProjects() {
         $(".menu-rodape").transition('fade in');
         var projetos = [

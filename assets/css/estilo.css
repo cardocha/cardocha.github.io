@@ -751,6 +751,10 @@ img.ui.tiny.image.image-upwork {
     i.big.mail.icon.hire-me-mail-icon {
         font-size: 100px !important;
     }
+    
+    .form-paypal{
+        display:none;
+    }
 }
 
 .ui.small.mini.imagem-menu-cel {
