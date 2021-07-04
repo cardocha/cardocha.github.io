@@ -31,47 +31,11 @@ $(document).ready(function () {
         var projetos = [
             {
                 id: 1,
-                title: "4x1 Drinking Game",
-                url: "https://play.google.com/store/apps/details?id=com.cardocha.quatroporumparabeber",
-                img: "assets/images/41.png",
-                alone: false
-            },
-            {
-                id: 2,
-                title: "Sueca Brasileira Drinking Game",
-                url: "https://play.google.com/store/apps/details?id=com.cardocha.suecabrasileira",
-                img: "assets/images/sb.png",
-                alone: false
-            },
-            {
-                id: 3,
-                title: "Vote! Drinking Game",
-                url: "https://play.google.com/store/apps/details?id=cardocha.com.vote",
-                img: "assets/images/voto.png",
-                alone: false
-            },
-            {
-                id: 4,
-                title: "Festa Brasileira Drinking Game",
-                url: "https://play.google.com/store/apps/details?id=com.cardocha.festabrasileira",
-                img: "assets/images/festa_br.png",
-                alone: false
-
-            },
-            {
-                id: 5,
                 title: "Soundpiot firefox extension",
                 url: "https://addons.mozilla.org/pt-BR/firefox/addon/soundpiot/",
                 img: "assets/images/soundpiot48.png",
                 alone: true
 
-            },
-            {
-                id: 6,
-                title: "AppBrasileiro API",
-                url: "https://appbrasileiro.com.br",
-                img: "assets/images/icone_appbr.png",
-                alone: true
             }
         ];
 
